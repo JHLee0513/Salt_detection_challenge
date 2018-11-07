@@ -25,4 +25,7 @@ In this competition TGS provided images collected using seismic reflection of th
 * Binary Cross Entropy (BCE) with DICE loss as loss function
 * Submission: 0.807 Public LeaderBoard score
 
+# Background knowledge & furhter explanation of ideas discussed in this notebook:
+
+
 More to be updated!
