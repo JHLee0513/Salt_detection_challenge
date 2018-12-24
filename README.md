@@ -1,6 +1,7 @@
 # Salt_detection_challenge
-This is a documentatin summarizing my approach to the image Segmentation project based on Kaggle's TGS salt detection competition.The documentation is as follows:
+This is a documentatin summarizing my approach to the image Segmentation project based on Kaggle's TGS salt identification challenge. The documentation is as follows:
 * What is this competition about?
+* Motivation
 * The data used
 * Major ideas, what they are with example code
 * The result, conclusion of my approach
@@ -11,10 +12,13 @@ But unfortunately, knowing where large salt deposits are precisely is very diffi
 
 In this competition TGS provided images collected using seismic reflection of the ground in various locations. Thus in the data we are given training data as the images and their appropriate masks highlighting the salt deposit within that image as labels. The goal of the competition is to build a model that best performs this image segmentation task.
 
-# The data
-![alt text](https://wiki.seg.org/wiki/Salt-flank_reflections#/media/File:Ch05_fig0-1.png)
+# Motivation
+I have taken interest in computer vision due to my recent involvement with the robotics club, and this competition was timely there for me to learn and practice image segmentation task. Thus this was a learning experience for me, not necessarily for winning. 
 
-The main data of this competition is based on seimic data, examples shown above. They are much like ultrasound imaging of the ground. Using waves we can generate images of the subsurface like that above for our segmentation problem. 
+# The data
+![alt text](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjT2MDE-7ffAhXGw7wKHb7RDT4QjRx6BAgBEAU&url=https%3A%2F%2Fmath.berkeley.edu%2F~sethian%2F2006%2FApplications%2FSeismic%2Fseismic_analysis.html&psig=AOvVaw0EYVBl8I-L4HowsjXJHAMZ&ust=1545723667259928)
+
+The main data of this competition is based on seimic data, example shown above. They are much like ultrasound imaging of the ground. Using waves we can generate images of the subsurface like that above for our segmentation problem. 
 
 # Major ideas implemented in this project:
 * Image segmentation model using U-net architecture UpSampling layers in Keras
