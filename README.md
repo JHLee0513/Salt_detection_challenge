@@ -16,7 +16,7 @@ In this competition TGS provided images collected using seismic reflection of th
 I have taken interest in computer vision due to my recent involvement with the robotics club, and this competition was timely there for me to learn and practice image segmentation task. Thus this was a learning experience for me, not necessarily for winning. 
 
 # The data
-![alt text](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjT2MDE-7ffAhXGw7wKHb7RDT4QjRx6BAgBEAU&url=https%3A%2F%2Fmath.berkeley.edu%2F~sethian%2F2006%2FApplications%2FSeismic%2Fseismic_analysis.html&psig=AOvVaw0EYVBl8I-L4HowsjXJHAMZ&ust=1545723667259928)
+![alt text](https://math.berkeley.edu/~sethian/2006/Applications/Seismic/smooth_elf_post_img.jpg)
 
 The main data of this competition is based on seimic data, example shown above. They are much like ultrasound imaging of the ground. Using waves we can generate images of the subsurface like that above for our segmentation problem. 
 
