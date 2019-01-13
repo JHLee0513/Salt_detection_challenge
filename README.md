@@ -32,6 +32,7 @@ The main data of this competition is based on seimic data, example shown above. 
 
 For our segmentation we use the U-net architecture that has rosen to attention. Full details can be found from the research paper: https://arxiv.org/abs/1505.04597 
 ![alt text](https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png){:height="50%" width="50%"}
+<img src="https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png" width="100" height="100">
 
 With the U-net we are able to build a strong segmentation model, and thus this became the basis of the network architecture.
 
