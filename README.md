@@ -23,16 +23,14 @@ In this competition TGS provided images collected using seismic reflection of th
 I have taken interest in computer vision due to my recent involvement with the robotics club, and this competition was timely there for me to learn and practice image segmentation task. Thus this was a learning experience for me, not necessarily for winning. 
 
 # The data
-![alt text](https://math.berkeley.edu/~sethian/2006/Applications/Seismic/smooth_elf_post_img.jpg){:height="50%" width="50%"}
-
+<img src="https://math.berkeley.edu/~sethian/2006/Applications/Seismic/smooth_elf_post_img.jpg" width="400" height="300">
 The main data of this competition is based on seimic data, example shown above. They are much like ultrasound imaging of the ground. Using waves we can generate images of the subsurface like that above for our segmentation problem. 
 
 # Major ideas implemented in this project:
 * Image segmentation model using U-net architecture UpSampling layers in Keras
 
 For our segmentation we use the U-net architecture that has rosen to attention. Full details can be found from the research paper: https://arxiv.org/abs/1505.04597 
-![alt text](https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png){:height="50%" width="50%"}
-<img src="https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png" width="100" height="100">
+<img src="https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png" width="400" height="300">
 
 With the U-net we are able to build a strong segmentation model, and thus this became the basis of the network architecture.
 
@@ -47,7 +45,7 @@ Test Time Augmentation is a process where test dataset is augmented to generate 
 
 * Stratified K-Fold ensembling to develop a better-generalizing model
 K-Fold ensembling is a technique multiple version of the model is trained using 'different' dataset and cross validation set. A visualization of a 5-fold validation is as follows:
-![alt text](https://i.stack.imgur.com/1fXzJ.png)
+<img src="https://i.stack.imgur.com/1fXzJ.png" width="400" height="300">
 Stratified refers to splitting dataset into fold such that each dataset has equal proprotions of different data. In this project this meant each fold had equally distributed images of varying salt coverage over the image e.g. 5 equal portions of iamges with 50% salt coverage,etc. Implementing Stratified K-Fold increased by LB score as well. 
 
 * Experimented with SGD and Adam optimizers, BCE, DICE, lovas-hinge loss functions
