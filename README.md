@@ -1,12 +1,19 @@
 # Salt_detection_challenge
-This is a documentatin summarizing my approach to the image Segmentation project based on Kaggle's TGS salt identification challenge. The documentation is as follows:
-* What is this competition about?
-* Motivation
-* The data used
-* Major ideas, what they are with example code
-* The result, conclusion of my approach
+This is a documentation summarizing my approach to the image Segmentation project based on Kaggle's TGS salt identification challenge. 
 
-# What is this competition about? 
+# What is in this documentation:
+* Competiton description
+* Motivation
+* Data
+* Final Model
+* Squeeze and Excitation - SE_modules.md
+* ResNet - ResNet.md (TODO)
+* Unet - UNET.md (TODO)
+* Transfer Learning - TLearning.md (TODO)
+* Final code - .ipynb
+* Augmentation & Ensembling method - misc.md (TODO)
+
+# Competition Description
 "Several areas of Earth with large accumulations of oil and gas also have huge deposits of salt below the surface.
 But unfortunately, knowing where large salt deposits are precisely is very difficult. Professional seismic imaging still requires expert human interpretation of salt bodies. This leads to very subjective, highly variable renderings. More alarmingly, it leads to potentially dangerous situations for oil and gas company drillers." - from competition description.
 
@@ -16,7 +23,7 @@ In this competition TGS provided images collected using seismic reflection of th
 I have taken interest in computer vision due to my recent involvement with the robotics club, and this competition was timely there for me to learn and practice image segmentation task. Thus this was a learning experience for me, not necessarily for winning. 
 
 # The data
-![alt text](https://math.berkeley.edu/~sethian/2006/Applications/Seismic/smooth_elf_post_img.jpg)
+![alt text](https://math.berkeley.edu/~sethian/2006/Applications/Seismic/smooth_elf_post_img.jpg =250x250)
 
 The main data of this competition is based on seimic data, example shown above. They are much like ultrasound imaging of the ground. Using waves we can generate images of the subsurface like that above for our segmentation problem. 
 
@@ -24,7 +31,7 @@ The main data of this competition is based on seimic data, example shown above. 
 * Image segmentation model using U-net architecture UpSampling layers in Keras
 
 For our segmentation we use the U-net architecture that has rosen to attention. Full details can be found from the research paper: https://arxiv.org/abs/1505.04597 
-![alt text](https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png)
+![alt text](https://cdn-images-1.medium.com/max/1600/1*q3vqSaSTgYzpbk1KIBmWsw.png =250x250)
 
 With the U-net we are able to build a strong segmentation model, and thus this became the basis of the network architecture.
 
